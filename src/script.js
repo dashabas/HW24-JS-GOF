@@ -16,8 +16,8 @@ class PubSub {
 }
 
 class Jack {
-    constructor(el) {
-        this.pubsub = el;
+    constructor(pubsub) {
+        this.pubsub = pubsub;
         this.name = 'Jack';
         this.pubsub.subscribe('message to Jack', this.emitMessage, this);
     }
@@ -31,8 +31,8 @@ class Jack {
 }
 
 class Billy {
-    constructor(el) {
-        this.pubsub = el;
+    constructor(pubsub) {
+        this.pubsub = pubsub;
         this.name = 'Billy';
         this.pubsub.subscribe('message to Billy', this.emitMessage, this);
     }
@@ -46,8 +46,8 @@ class Billy {
 }
 
 class Rose {
-    constructor(el) {
-        this.pubsub = el;
+    constructor(pubsub) {
+        this.pubsub = pubsub;
         this.name = 'Rose';
         this.pubsub.subscribe('message to Rose', this.emitMessage, this);
     }
